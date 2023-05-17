@@ -1,0 +1,91 @@
+.group 			  { 
+    position:relative; 
+    margin-bottom: 40px;
+  }
+  .input_homeadmin{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+  .input_homeadmin:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  .lable_admin 				 {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  .input_homeadmin:focus ~ label, .input_homeadmin:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+  .formmm{
+   padding-top: 50px;
+   padding-left: 200px;
+  }
+
+h1{
+    margin-left: 200px;
+}
+  button{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .error{
+    color: red;
+  }
+  .noti{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+.MuiIconButton-root{
+    margin: 0px !important;
+    width: 50px !important;
+}
